@@ -36,9 +36,15 @@ export default function Logon() {
                 <form onSubmit={handlerLogin}>
                     <h1>Faça seu logon</h1>
 
-                    <input placeholder="Sua ID"
+                    <input placeholder="Your ID"
+                    style={{marginBottom:'1.6rem'}}
                         value={id}
                         onChange={e => setId(e.target.value)}
+                    />
+                    <input placeholder="Your Password"
+                      //  value={}
+                        //onChange={e => setId(e.target.value)}
+                        type='password'
                     />
                     <button className="button" type="submit">Entrar</button>
 
